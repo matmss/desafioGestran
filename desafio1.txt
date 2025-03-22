@@ -1,0 +1,23 @@
+- Given I need to register to Buggy Cars Rating
+- When I fill the required fields
+    - Login
+    - First Name
+    - Last Name
+    - Password
+    - Confirm Password
+- Then the Register button should be available to create the Login
+
+- Given I need to validate the required fields
+- When I fill a required fields
+    - Login
+- And I delete the information
+- Then the error message should be displayed
+    - Login is required
+
+- Given I need to validate the password fields
+- When I fill the Password and the Confirm Password fields withe the same values
+- Then the alert must be green matching the passwords
+
+- Given I need to validate the password fields
+- When I fill the Password and the Confirm Password fields withe different values
+- Then the alert must be red and the alert message "Passwords do not match"
